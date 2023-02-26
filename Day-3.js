@@ -26,7 +26,7 @@ const maxSubarraySum = (arr, n) => {
     //setting up a loop to achieve the sliding window, starting the loop at n because we already got the first sum of the sliding window with the first loop.
     for (let i = n; i < arr.length; i++) {
       tempSum = tempSum - arr[i - n] + arr[i]
-      maxSum = math.Max(maxSum, tempSum)
+      maxSum = Math.max(maxSum, tempSum)
     }
     return maxSum
   
